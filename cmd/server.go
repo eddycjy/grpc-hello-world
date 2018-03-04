@@ -18,7 +18,7 @@ var serverCmd = &cobra.Command{
 			}
 		}()
 		
-		server.RunServe()
+		server.Run()
 	},
 }
 

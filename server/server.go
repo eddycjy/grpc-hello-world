@@ -30,7 +30,7 @@ var (
     tlsConfig *tls.Config
 )
 
-func RunServe() (err error) {
+func Run() (err error) {
     EndPoint = ":" + ServerPort
     tlsConfig = util.GetTLSConfig(CertPemPath, CertKeyPath)
 
