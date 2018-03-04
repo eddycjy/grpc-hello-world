@@ -1,0 +1,63 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "hello.proto",
+    "version": "version not set"
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/hello_world": {
+      "post": {
+        "operationId": "SayHelloWorld",
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/protoHelloWorldResponse"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/protoHelloWorldRequest"
+            }
+          }
+        ],
+        "tags": [
+          "HelloWorld"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "protoHelloWorldRequest": {
+      "type": "object",
+      "properties": {
+        "referer": {
+          "type": "string"
+        }
+      }
+    },
+    "protoHelloWorldResponse": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

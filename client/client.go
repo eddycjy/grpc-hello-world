@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	creds, err := credentials.NewClientTLSFromFile("../certs/server.pem", "dev")
+	creds, err := credentials.NewClientTLSFromFile("../conf/certs/server.pem", "grpc server name")
 	if err != nil {
 		log.Println("Failed to create TLS credentials %v", err)
 	}
@@ -35,5 +35,3 @@ func main() {
 
 	log.Println(r.Message)
 }
-
-// OR: curl -X POST -k https://localhost:50052/example/echo -d '{"name": "gRPC-HTTP is working!"}'

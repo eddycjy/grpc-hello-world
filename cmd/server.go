@@ -18,14 +18,16 @@ var serverCmd = &cobra.Command{
 			}
 		}()
 		
-		server.Serve()
+		server.RunServe()
 	},
 }
 
 func init() {
-	serverCmd.Flags().StringVarP(&server.ServerPort, "port", "p", "50051", "server port")
-	serverCmd.Flags().StringVarP(&server.CertPemPath, "cert-pem", "", "./certs/server.pem", "cert pem path")
-	serverCmd.Flags().StringVarP(&server.CertKeyPath, "cert-key", "", "./certs/server.key", "cert key path")
-	serverCmd.Flags().StringVarP(&server.CertName, "cert-name", "", "grpc server name", "server's hostname")
+	serverCmd.Flags().StringVarP(&server.ServerPort, "port", "p", "50052", "server port")
+	serverCmd.Flags().StringVarP(&server.CertPemPath, "cert-pem", "", "./conf/certs/server.pem", "cert-pem path")
+	serverCmd.Flags().StringVarP(&server.CertKeyPath, "cert-key", "", "./conf/certs/server.key", "cert-key path")
+	serverCmd.Flags().StringVarP(&server.CertServerName, "cert-server-name", "", "grpc server name", "server's hostname")
+	serverCmd.Flags().StringVarP(&server.SwaggerDir, "swagger-dir", "", "proto", "path to the directory which contains swagger definitions")
+	
 	rootCmd.AddCommand(serverCmd)
 }
