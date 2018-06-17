@@ -14,9 +14,9 @@ import (
     "github.com/grpc-ecosystem/grpc-gateway/runtime"
     "github.com/elazarl/go-bindata-assetfs"
     
-    pb "grpc-hello-world/proto"
-    "grpc-hello-world/pkg/util"
-    "grpc-hello-world/pkg/ui/data/swagger"
+    pb "github.com/EDDYCJY/grpc-hello-world/proto"
+    "github.com/EDDYCJY/grpc-hello-world/pkg/util"
+    "github.com/EDDYCJY/grpc-hello-world/pkg/ui/data/swagger"
 )
 
 var (

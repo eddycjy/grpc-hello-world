@@ -1,7 +1,7 @@
 package main
 
 import (
-	"grpc-hello-world/cmd"
+	"github.com/EDDYCJY/grpc-hello-world/cmd"
 )
 
 func main() {

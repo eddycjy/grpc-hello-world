@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 	
-	"grpc-hello-world/server"
+	"github.com/EDDYCJY/grpc-hello-world/server"
 )
 
 var serverCmd = &cobra.Command{
