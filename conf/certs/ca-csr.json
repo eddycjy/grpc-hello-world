@@ -1,0 +1,14 @@
+{
+	"CN": "Self Signed Ca",
+	"key": {
+		"algo": "rsa",
+		"size": 2048
+	},
+	"names": [{
+		"C": "CN",
+		"L": "SH",
+		"O": "Netease",
+		"ST": "SH",
+		"OU": "OT"
+	}]
+}

@@ -78,6 +78,7 @@ func newGrpc() *grpc.Server {
     opts := []grpc.ServerOption{
         grpc.Creds(creds),
     }
+
     server := grpc.NewServer(opts...)
 
     pb.RegisterHelloWorldServer(server, NewHelloService())

@@ -1,0 +1,28 @@
+{
+    "CN": "Server",
+    "hosts": [
+        "127.0.0.1",
+        "grpc-server",
+        "panther",
+        "panther-project",
+        "panther-user",
+        "panther-third",
+        "panther-geo",
+        "panther-merchant",
+        "panther-session",
+        "panther-task",
+        "panther-statistics"
+    ],
+    "key": {
+        "algo": "ecdsa",
+        "size": 256
+    },
+    "names": [
+        {
+            "C": "CN",
+            "L": "SH",
+            "ST": "SH"
+        }
+    ]
+}
+

@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	creds, err := credentials.NewClientTLSFromFile("../conf/certs/server.pem", "grpc server name")
+	creds, err := credentials.NewClientTLSFromFile("../conf/certs/server.pem", "panther")
 	if err != nil {
 		log.Println("Failed to create TLS credentials %v", err)
 	}
